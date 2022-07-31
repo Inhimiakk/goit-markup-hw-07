@@ -709,7 +709,7 @@ a.social-com:focus {
 
 .form-input {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .modal-form {
@@ -742,15 +742,28 @@ a.social-com:focus {
     left: 15px;
 }
 
-.form-input input {
+.form-input input, .form-input textarea {
     padding-left: 42px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
 
-input[type="checkbox"] {
+.form-input input:focus-visible, .form-input textarea:focus-visible {
+    outline: none;
+    border-color: var(--fifth-color);
+}
+
+.form-input input:focus-visible~label svg,
+.form-input textarea:focus-visible~label svg {
+    fill: var(--fifth-color);
+}
+
+.modal-form input[type="checkbox"] {
     accent-color: #2196F3;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
 }
 
 .form-input textarea {
@@ -767,6 +780,11 @@ input[type="checkbox"] {
 }
 
 .form-input-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     margin: 20px 0;
     cursor: pointer;
 }
