@@ -76,6 +76,10 @@ ul {
     fill: var(--fifth-color);
 }
 
+.btn-foot-form{
+    transition: background-color 250ms var(--cubic), filter 250ms var(--cubic);
+}
+
 .send-btn:hover,
 .send-btn:focus,
 .btn-foot-form:hover,
@@ -84,8 +88,7 @@ ul {
 .btn-hero:hover,
 .btn-filter:focus,
 .btn-filter:hover {
-    transition: 250ms var(--cubic);
-    background-color: var(--nineth-color);
+   background-color: var(--nineth-color);
     color: #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -624,6 +627,16 @@ a.social-com:focus {
 }
 
 /* MODALKS SASALKA */
+
+.umovi{
+    text-decoration: underline;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+}
 .data-modal {
     backdrop-filter: brightness(0.8);
     width: 100%;
@@ -669,6 +682,7 @@ a.social-com:focus {
     border-radius: 50%;
     cursor: pointer;
     background-color: var(--first-color);
+    
 }
 
 /* textposedebilizm */
@@ -748,15 +762,25 @@ a.social-com:focus {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color 250ms var(--cubic);
 }
 
-.form-input input:focus-visible, .form-input textarea:focus-visible {
+.form-input input~label svg,
+.form-input textarea~label svg {
+    transition: fill 250ms var(--cubic);
+}
+
+.form-input input:focus-visible, .form-input textarea:focus-visible,
+.form-input input:hover,
+.form-input textarea:hover {
     outline: none;
     border-color: var(--fifth-color);
 }
 
 .form-input input:focus-visible~label svg,
-.form-input textarea:focus-visible~label svg {
+.form-input textarea:focus-visible~label svg,
+.form-input input:hover~label svg,
+.form-input textarea:hover~label svg {
     fill: var(--fifth-color);
 }
 
@@ -800,8 +824,17 @@ a.social-com:focus {
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: background-color 250ms var(--cubic), filter 250ms var(--cubic);
+        
 }
 
+.btn-modal svg{
+    transition: fill 250ms var(--cubic);
+}
+
+.btn-modal:hover svg{
+    fill: var(--fifth-color);
+}
 
 /* footpenissnayaformayaustala */
 
