@@ -1,0 +1,33 @@
+.footer__button {
+    transition: background-color 250ms var(--cubic), filter 250ms var(--cubic);
+    letter-spacing: 0.06em;
+}
+
+.send-btn:hover,
+.send-btn:focus,
+.footer__button-form:hover,
+.footer__button:focus,
+.hero__button:focus,
+.hero__button:hover,
+.portfolio__button:focus,
+.portfolio__button:hover {
+    background-color: var(--nineth-color);
+    color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.adress__link:focus,
+.adress__link:hover {
+    color: var(--first-color);
+}
+
+
+
+.portfolio__button,
+.hero__button{
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic), filter 250ms var(--cubic);
+}

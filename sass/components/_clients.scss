@@ -1,0 +1,29 @@
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__icon>div {
+    padding: 16px 32px;
+    border: 1px solid var(--client-color);
+    border-radius: 4px;
+    transition: border-color 250ms var(--cubic);
+    width: 170px
+}
+
+
+
+.clients__icon:hover>div,
+.clients__icon:focus>div {
+    border-color: var(--fifth-color);
+}
+
+.company {
+    fill: var(--client-color);
+    transition: fill 250ms var(--cubic);
+    .clients__icon:hover &,
+    .clients__icon:focus & {
+            fill: var(--fifth-color);
+        }
+}
+
