@@ -12,213 +12,213 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<header>
-		<div class="container">
-			<nav class="main-nav">
-				<a class="logo logo-head" href="/">
-					<span class="logo-first">Web</span>Studio</a
-				>
-				<ul class="list header-list">
+			<div class="container">
+				<nav class="nav">
+					<a class="logo logo__nav" href="/">
+						<span class="logo__span">Web</span>Studio</a
+					>
+					<ul class="list nav__list">
+						<li>
+							<a
+								class="link nav__link nav__link_color "
+								href="./index.html"
+								>Студия</a
+							>
+						</li>
+						<li>
+							<a
+								class="link nav__link nav__link_color nav__active"
+								href="./portfolio.html"
+								>Портфолио</a
+							>
+						</li>
+						<li>
+							<a class="link nav__link nav__link_color" href=""
+								>Контакты</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<ul class="list list__contacts">
 					<li>
 						<a
-							class="link link-header link-nav"
-							href="./index.html"
-							>Студия</a
+							class="link nav__link nav__link_header"
+							href="mailto:info@devstudio.com"
+							><svg class="nav__icon" width="16px" height="12px">
+								<use
+									href="./images/icons.svg#envelope"
+								></use></svg>info@devstudio.com</a
 						>
 					</li>
 					<li>
 						<a
-							class="link link-header link-nav active"
-							href="./portfolio.html"
-							>Портфолио</a
+							class="link nav__link nav__link_header"
+							href="tel:+380961111111"
 						>
-					</li>
-					<li>
-						<a class="link link-header link-nav" href=""
-							>Контакты</a
+							<svg class="nav__icon" width="10px" height="16px">
+								<use
+									href="./images/icons.svg#smartphone"
+								></use></svg>+38 096 111 11 11</a
 						>
 					</li>
 				</ul>
-			</nav>
-			<ul class="list header-list-con">
-				<li>
-					<a
-						class="link link-header link-info"
-						href="mailto:info@devstudio.com"
-						><svg class="icon-head" width="16px" height="12px">
-							<use
-								href="./images/icons.svg#envelope"
-							></use></svg>info@devstudio.com</a
-					>
-				</li>
-				<li>
-					<a
-						class="link link-header link-info"
-						href="tel:+380961111111"
-					>
-						<svg class="icon-head" width="10px" height="16px">
-							<use
-								href="./images/icons.svg#smartphone"
-							></use></svg>+38 096 111 11 11</a
-					>
-				</li>
-			</ul>
-		</div>
-	</header>
+			</div>
+		</header>
 	<main>
-		<section class="cont-port">
-			<div class="container  container-vertical">
+		<section class="portfolio">
+			<div class="container  container_vertical">
 			<h1 class="visually-hidden">Портфолио</h1>
-			<ul class="list filter-list">
-				<li><button class="btn-filter btn-hero-filter" type="button">Все</button></li>
+			<ul class="list list__filter">
+				<li><button class="portfolio__button portfolio__button_hero" type="button">Все</button></li>
 				<li>
-					<button class="btn-filter" type="button">Веб-сайты</button>
+					<button class="portfolio__button" type="button">Веб-сайты</button>
 				</li>
 				<li>
-					<button class="btn-filter" type="button">Приложения</button>
+					<button class="portfolio__button" type="button">Приложения</button>
 				</li>
 				<li>
-					<button class="btn-filter" type="button">Дизайн</button>
+					<button class="portfolio__button" type="button">Дизайн</button>
 				</li>
 				<li>
-					<button class="btn-filter" type="button">Маркетинг</button>
+					<button class="portfolio__button" type="button">Маркетинг</button>
 				</li>
 			</ul>
-			<ul class="list list-product">
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+			<ul class="list list__cards">
+				<li class="card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant1.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Технокряк</h2>
-					<p class="port-p">Веб-сайт</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Технокряк</h2>
+					<p class="portfolio__p">Веб-сайт</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant2.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-					<p class="port-p">Дизайн</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+					<p class="portfolio__p">Дизайн</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant3.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Ресторан Seafood</h2>
-					<p class="port-p">Додаток</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Ресторан Seafood</h2>
+					<p class="portfolio__p">Додаток</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant4.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Проєкт Prime</h2>
-					<p class="port-p">Маркетинг</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Проєкт Prime</h2>
+					<p class="portfolio__p">Маркетинг</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant5.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Проєкт Boxes</h2>
-					<p class="port-p">Додаток</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Проєкт Boxes</h2>
+					<p class="portfolio__p">Додаток</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant6.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Inspiration has no Borders</h2>
-					<p class="port-p">Веб-сайт</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Inspiration has no Borders</h2>
+					<p class="portfolio__p">Веб-сайт</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant7.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Видання Limited Edition</h2>
-					<p class="port-p">Дизайн</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Видання Limited Edition</h2>
+					<p class="portfolio__p">Дизайн</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant8.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Проект LAB</h2>
-					<p class="port-p">Маркетинг</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Проект LAB</h2>
+					<p class="portfolio__p">Маркетинг</p></div></div></a>
 				</li>
-				<li class="card-port"><a href=""><div class="port-info-card">
-					<div class="wrap-port">
+				<li class="portfolio__card"><a href=""><div class="portfolio__card">
+					<div class="portfolio__wrap">
 					<img
 						src="./images/contant9.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/>
-					<div class="overflow-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+					<div class="portfolio__owerflow">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
 				</div>
-					<div class="port-info"><h2 class="port-title">Growing Business</h2>
-					<p class="port-p">Додаток</p></div></div></a>
+					<div class="portfolio__info"><h2 class="portfolio__title">Growing Business</h2>
+					<p class="portfolio__p">Додаток</p></div></div></a>
 				</li>
 			</ul>
 		</div>
 		</div>
-	</main>	<footer class="foot-bg">
-			<div class="container foot-cont">
-				<div class="adress-div">
-					<a class="logo logo-foot" href="/"
-						><span class="logo-first">Web</span>Studio</a
+	</main>	<footer class="footer">
+			<div class="container footer__container">
+				<div class="adress">
+					<a class="logo logo_footer" href="/"
+						><span class="logo__span">Web</span>Studio</a
 					>
-					<address class="adr-info">
-						<p class="ad-foot-col footer-info">
+					<address class="adress__info">
+						<p class="adress__p adress__p_col ">
 							г. Киев, пр-т Леси Украинки, 26
 						</p>
 						<ul class="list">
-							<li class="link-foot">
+							<li class="adress__link">
 								<a
-									class="link link-foot-col footer-info"
+									class="link adress__link adress__link_color"
 									href="mailto:info@example.com"
 									>info@example.com</a
 								>
 							</li>
-							<li class="link-foot">
+							<li class="adress__li">
 								<a
-									class="link link-foot-col footer-info"
+									class="link adress__link adress__link_color"
 									href="tel:+380991111111"
 									>+38 099 111 11 11</a
 								>
@@ -226,9 +226,9 @@
 						</ul>
 					</address>
 				</div>
-				<div class="icons-foot">
-					<p class="big-foot"><strong>приєднуйтесь</strong></p>
-					<ul class="list footer-social">
+				<div class="footer__icon">
+					<p class="footer-warning"><strong>приєднуйтесь</strong></p>
+					<ul class="list footer__social">
 						<li>
 							<a href="#" class="social">
 								<svg class="social" width="20" height="20">
@@ -268,10 +268,10 @@
 					</ul>
 				</div>
 				<div>
-					<p class="big-foot">
+					<p class="footer-warning">
 						<strong>Підпишіться на розсилку</strong>
 					</p>
-					<form class="subscribe">
+					<form class="footer__subscribe">
 						<input
 							type="email"
 							name="email"
@@ -279,7 +279,7 @@
 							placeholder="E-mail"
 							required="true"
 						/>
-						<button class="btn-foot-form" type="submit">Підписатися<svg width="24px" height="24px">
+						<button class="footer__button" type="submit">Підписатися<svg width="24px" height="24px">
 							<use href="./images/icons.svg#samoletik"></use>
 						</svg></button>
 					</form>
